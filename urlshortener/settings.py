@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django_hosts.middleware.HostsRequestMiddleware',
+    # 'django_hosts.middleware.HostsRequestMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_hosts.middleware.HostsResponseMiddleware',
+    # 'django_hosts.middleware.HostsResponseMiddleware',
 ]
 
 ROOT_URLCONF = 'urlshortener.urls'
@@ -62,7 +62,7 @@ ROOT_HOSTCONF = 'urlshortener.hosts'
 
 DEFAULT_HOST = 'www'
 
-DEFAULT_REDIRECT_URL ="" #"http://www.ushort.com:8000"
+DEFAULT_REDIRECT_URL = "http://www.ushort.com:8000"
 
 PARENT_HOST = ''
 

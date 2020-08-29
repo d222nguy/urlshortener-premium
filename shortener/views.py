@@ -27,7 +27,9 @@ class HomeView(View):
         context = {"form": form}
         template = "shortener/home.html"
         if form.is_valid():
+            print("Form is valid!")
             new_url = addHttpIfNecessary(form.cleaned_data["url"]) #Get url from submitted form
+            print("new_url = ", new_url)
             try:
                 obj, created = URL.objects.get_or_create(url = new_url) #create model object
                 check = checkForMalware(new_url)
