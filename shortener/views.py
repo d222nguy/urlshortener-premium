@@ -39,7 +39,7 @@ class HomeView(View):
                 "created": created
             }
             if check:
-                template = "shortener/suspicious.html"
+                template =  "shortener/suspicious.html"
             elif created:
                 template = "shortener/success.html"
             elif not created:

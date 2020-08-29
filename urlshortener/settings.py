@@ -62,9 +62,9 @@ ROOT_HOSTCONF = 'urlshortener.hosts'
 
 DEFAULT_HOST = 'www'
 
-DEFAULT_REDIRECT_URL = "http://www.ushort.com:8000"
+DEFAULT_REDIRECT_URL ="" #"http://www.ushort.com:8000"
 
-PARENT_HOST = 'ushort.com'
+PARENT_HOST = ''
 
 TEMPLATES = [
     {
