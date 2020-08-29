@@ -46,10 +46,6 @@ class URL(models.Model):
             self.shortcode = create_shortcode(self)
         super(URL, self).save(*args, **kwargs)
     def get_short_url(self):
-       # url_path = reverse("scode", kwargs = {'shortcode': self.shortcode}, scheme = 'http', port = '8000', host = 'www')
-        # url_path = settings.
         print("self.shortcode = ", self.shortcode)
-
-        # print('url_path = ', url_path)
         return self.shortcode
     

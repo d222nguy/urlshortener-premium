@@ -10,7 +10,7 @@ class SubmitUrlForm(forms.Form):
             validators=[validate_url],
             widget = forms.TextInput(
                     attrs ={
-                        "placeholder": "Long URL",
+                        "placeholder": "Long URL (e.g. http://malware.testing.google.test/testing/malware/)",
                         "class": "form-control"
                         }
                 )
