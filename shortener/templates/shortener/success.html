@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+
+{% block title%}
+{{object.shortcode}}
+{% endblock%}
+{% block content %}
+<div class="container">
+    <div class="row">
+    <div class = 'text-center col-sm-12'>
+        <h1> Success! </h1>
+        <p> Source:
+        <a href = {{object.url}}> {{object.url}} </a>
+        </p>
+
+        <p> Shortened URL:
+        <a href = {{object.get_short_url}}> {{object.get_short_url}} </a>
+        </p>
+    </div>
+    </div>
+</div>
+{% endblock content %}
