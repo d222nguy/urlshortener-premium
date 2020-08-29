@@ -1,8 +1,6 @@
 from django.http import HttpResponseRedirect
 from django.conf import settings
 
-# DEFAULT_URL_REDIRECT = getattr(settings, "DEFAULT_REDIRECT_URL", "http://www.ushort.com:8000")
-
 DEFAULT_URL_REDIRECT = getattr(settings, "DEFAULT_REDIRECT_URL", "")
 
 

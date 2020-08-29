@@ -13,7 +13,7 @@
         </p>
 
         <p> Shortened URL:
-        <a href = {{object.get_short_url}}> {{object.get_short_url}} </a>
+        <a href = {{request.scheme}}://{{request.get_host}}/{{object.get_short_url}}> Here </a>
         </p>
     </div>
     </div>
